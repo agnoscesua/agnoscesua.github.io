@@ -218,6 +218,83 @@
 
       <div class="body-wrap">
   
+    <article id="post-jsp" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/24/jsp/" class="article-date">
+  	<time datetime="2016-04-24T13:43:52.757Z" itemprop="datePublished">2016-04-24</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/24/jsp/">JSP学习笔记(一)</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>JSP是一种运行在服务端的语言。全称（Java Server Pages），是由Sun Microsystems公司倡导和许多公司参与共同创建的一种使软件开发者可以响应客户端请求，而动态生成HTML、XML或其他格式文档的Web网页的技术标准。JSP技术是以Java语言作为脚本语言的，JSP网页为整个服务器端的Java库单元提供了一个接口来服务于HTTP的应用程序。</p>
+<h2 id="JSP基础语法"><a href="#JSP基础语法" class="headerlink" title="JSP基础语法"></a>JSP基础语法</h2><h3 id="JSP页面元素简介及page指令"><a href="#JSP页面元素简介及page指令" class="headerlink" title="JSP页面元素简介及page指令"></a>JSP页面元素简介及page指令</h3><p>Jsp页面组成部分：指令、表达式、小脚本、声明、注释、静态内容。</p>
+<h5 id="Jsp指令"><a href="#Jsp指令" class="headerlink" title="Jsp指令"></a>Jsp指令</h5><p>1.page指令：通常位于jsp页面的顶端，同一个页面可以有多个page指令。</p>
+<p>2.include指令：将一个外部文件嵌入到当前jsp文件中，同时解析这个页面中的jsp语句。</p>
+<p>3.taglib指令：使用标签库定义新的自定义标签，在jsp页面中启用定制行为。</p>
+<p>page指令语法：</p>
+<pre><code>&lt;%@ page 属性1=&quot;属性值&quot; 属性2=&quot;属性值1，属性值2&quot;...属性n=&quot;属性值n&quot;%&gt;
+</code></pre><table class="table table-bordered table-striped table-condensed"><br>  <tr><br>   <td>属性</td><br>   <td>描述</td><br>   <td>默认值</td><br>  </tr><br>  <tr><br>   <td>language</td><br>   <td>指定JSP页面使用的脚本语言</td><br>   <td>java</td><br>  </tr><br>  <tr><br>   <td>import</td><br>   <td>通过该属性来引用脚本语言中使用到的类文件</td><br>   <td>无</td><br>  </tr><br>  <tr><br>   <td>contentType</td><br>   <td>用来指定JSP页面所采用的编码方式</td><br>   <td>text/html,ISO-8859-1</td><br>  </tr><br></table>
+
+<h5 id="JSP注释"><a href="#JSP注释" class="headerlink" title="JSP注释"></a>JSP注释</h5><p>1.HTML注释：</p>
+<pre><code>&lt;!--html注释--&gt;   //客户端可见
+</code></pre><p>2.JSP注释：</p>
+<pre><code>&lt;%--jsp注释--%&gt;   //客户端不可见
+</code></pre><p>3.JSP脚本注释：</p>
+<p>//  单行注释</p>
+<p>/<em> </em>/  多行注释</p>
+<h5 id="JSP脚本"><a href="#JSP脚本" class="headerlink" title="JSP脚本"></a>JSP脚本</h5><p>在JSP页面中执行的java代码。</p>
+<p>语法：</p>
+<pre><code>&lt;% java代码 %&gt;
+</code></pre><h5 id="JSP声明"><a href="#JSP声明" class="headerlink" title="JSP声明"></a>JSP声明</h5><p>在JSP页面中定义变量或者方法。</p>
+<p>语法：</p>
+<pre><code>&lt;%! java代码 %&gt;
+</code></pre><h5 id="JSP表达式"><a href="#JSP表达式" class="headerlink" title="JSP表达式"></a>JSP表达式</h5><p>在JSP页面中执行的表达式。</p>
+<p>语法：</p>
+<pre><code>&lt;%=表达式 %&gt;   //注意：表达式不以分号结束
+</code></pre><h5 id="JSP页面生命周期"><a href="#JSP页面生命周期" class="headerlink" title="JSP页面生命周期"></a>JSP页面生命周期</h5>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-gitlearning" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
