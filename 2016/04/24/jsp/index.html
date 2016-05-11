@@ -6,19 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>JSP学习笔记(一) | Walker&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="JSP是一种运行在服务端的语言。全称（Java Server Pages），是由Sun Microsystems公司倡导和许多公司参与共同创建的一种使软件开发者可以响应客户端请求，而动态生成HTML、XML或其他格式文档的Web网页的技术标准。JSP技术是以Java语言作为脚本语言的，JSP网页为整个服务器端的Java库单元提供了一个接口来服务于HTTP的应用程序。
-JSP基础语法JSP页面元素简">
+  <meta name="description" content="JSP是一种运行在服务端的语言。全称（Java Server Pages），是由Sun Microsystems公司倡导和许多公司参与共同创建的一种使软件开发者可以响应客户端请求，而动态生成HTML、XML或其他格式文档的Web网页的技术标准。JSP技术是以Java语言作为脚本语言的，JSP网页为整个服务器端的Java库单元提供了一个接口来服务于HTTP的应用程序。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JSP学习笔记(一)">
 <meta property="og:url" content="http://yoursite.com/2016/04/24/jsp/index.html">
 <meta property="og:site_name" content="Walker's Blog">
-<meta property="og:description" content="JSP是一种运行在服务端的语言。全称（Java Server Pages），是由Sun Microsystems公司倡导和许多公司参与共同创建的一种使软件开发者可以响应客户端请求，而动态生成HTML、XML或其他格式文档的Web网页的技术标准。JSP技术是以Java语言作为脚本语言的，JSP网页为整个服务器端的Java库单元提供了一个接口来服务于HTTP的应用程序。
-JSP基础语法JSP页面元素简">
-<meta property="og:updated_time" content="2016-04-24T15:23:10.278Z">
+<meta property="og:description" content="JSP是一种运行在服务端的语言。全称（Java Server Pages），是由Sun Microsystems公司倡导和许多公司参与共同创建的一种使软件开发者可以响应客户端请求，而动态生成HTML、XML或其他格式文档的Web网页的技术标准。JSP技术是以Java语言作为脚本语言的，JSP网页为整个服务器端的Java库单元提供了一个接口来服务于HTTP的应用程序。">
+<meta property="og:updated_time" content="2016-05-11T04:25:42.875Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JSP学习笔记(一)">
-<meta name="twitter:description" content="JSP是一种运行在服务端的语言。全称（Java Server Pages），是由Sun Microsystems公司倡导和许多公司参与共同创建的一种使软件开发者可以响应客户端请求，而动态生成HTML、XML或其他格式文档的Web网页的技术标准。JSP技术是以Java语言作为脚本语言的，JSP网页为整个服务器端的Java库单元提供了一个接口来服务于HTTP的应用程序。
-JSP基础语法JSP页面元素简">
+<meta name="twitter:description" content="JSP是一种运行在服务端的语言。全称（Java Server Pages），是由Sun Microsystems公司倡导和许多公司参与共同创建的一种使软件开发者可以响应客户端请求，而动态生成HTML、XML或其他格式文档的Web网页的技术标准。JSP技术是以Java语言作为脚本语言的，JSP网页为整个服务器端的Java库单元提供了一个接口来服务于HTTP的应用程序。">
   
     <link rel="alternative" href="/atom.xml" title="Walker&#39;s Blog" type="application/atom+xml">
   
@@ -109,17 +106,9 @@ JSP基础语法JSP页面元素简">
 					        
 								<a class="rss" target="_blank" href="#" title="rss">rss</a>
 					        
-								<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
-					        
 								<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
 					        
 								<a class="mail" target="_blank" href="#" title="mail">mail</a>
-					        
-								<a class="facebook" target="_blank" href="#" title="facebook">facebook</a>
-					        
-								<a class="google" target="_blank" href="#" title="google">google</a>
-					        
-								<a class="twitter" target="_blank" href="#" title="twitter">twitter</a>
 					        
 						</div>
 					</nav>
@@ -202,17 +191,9 @@ JSP基础语法JSP页面元素简">
 			        
 						<a class="rss" target="_blank" href="#" title="rss">rss</a>
 			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
-			        
 						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
 			        
 						<a class="mail" target="_blank" href="#" title="mail">mail</a>
-			        
-						<a class="facebook" target="_blank" href="#" title="facebook">facebook</a>
-			        
-						<a class="google" target="_blank" href="#" title="google">google</a>
-			        
-						<a class="twitter" target="_blank" href="#" title="twitter">twitter</a>
 			        
 				</div>
 			</nav>
@@ -254,14 +235,39 @@ JSP基础语法JSP页面元素简">
     <div class="article-entry" itemprop="articleBody">
       
         <p>JSP是一种运行在服务端的语言。全称（Java Server Pages），是由Sun Microsystems公司倡导和许多公司参与共同创建的一种使软件开发者可以响应客户端请求，而动态生成HTML、XML或其他格式文档的Web网页的技术标准。JSP技术是以Java语言作为脚本语言的，JSP网页为整个服务器端的Java库单元提供了一个接口来服务于HTTP的应用程序。</p>
+<a id="more"></a>
 <h2 id="JSP基础语法"><a href="#JSP基础语法" class="headerlink" title="JSP基础语法"></a>JSP基础语法</h2><h3 id="JSP页面元素简介及page指令"><a href="#JSP页面元素简介及page指令" class="headerlink" title="JSP页面元素简介及page指令"></a>JSP页面元素简介及page指令</h3><p>Jsp页面组成部分：指令、表达式、小脚本、声明、注释、静态内容。</p>
 <h5 id="Jsp指令"><a href="#Jsp指令" class="headerlink" title="Jsp指令"></a>Jsp指令</h5><p>1.page指令：通常位于jsp页面的顶端，同一个页面可以有多个page指令。</p>
 <p>2.include指令：将一个外部文件嵌入到当前jsp文件中，同时解析这个页面中的jsp语句。</p>
 <p>3.taglib指令：使用标签库定义新的自定义标签，在jsp页面中启用定制行为。</p>
 <p>page指令语法：</p>
 <pre><code>&lt;%@ page 属性1=&quot;属性值&quot; 属性2=&quot;属性值1，属性值2&quot;...属性n=&quot;属性值n&quot;%&gt;
-</code></pre><table class="table table-bordered table-striped table-condensed"><br>  <tr><br>   <td>属性</td><br>   <td>描述</td><br>   <td>默认值</td><br>  </tr><br>  <tr><br>   <td>language</td><br>   <td>指定JSP页面使用的脚本语言</td><br>   <td>java</td><br>  </tr><br>  <tr><br>   <td>import</td><br>   <td>通过该属性来引用脚本语言中使用到的类文件</td><br>   <td>无</td><br>  </tr><br>  <tr><br>   <td>contentType</td><br>   <td>用来指定JSP页面所采用的编码方式</td><br>   <td>text/html,ISO-8859-1</td><br>  </tr><br></table>
-
+</code></pre><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>language</td>
+<td>指定JSP页面使用的脚本语言</td>
+<td>java</td>
+</tr>
+<tr>
+<td>import</td>
+<td>通过该属性来引用脚本语言中使用到的类文件</td>
+<td>无</td>
+</tr>
+<tr>
+<td>contentType</td>
+<td>用来指定JSP页面所采用的编码方式</td>
+<td>text/html,ISO-8859-1</td>
+</tr>
+</tbody>
+</table>
 <h5 id="JSP注释"><a href="#JSP注释" class="headerlink" title="JSP注释"></a>JSP注释</h5><p>1.HTML注释：</p>
 <pre><code>&lt;!--html注释--&gt;   //客户端可见
 </code></pre><p>2.JSP注释：</p>
@@ -278,7 +284,16 @@ JSP基础语法JSP页面元素简">
 </code></pre><h5 id="JSP表达式"><a href="#JSP表达式" class="headerlink" title="JSP表达式"></a>JSP表达式</h5><p>在JSP页面中执行的表达式。</p>
 <p>语法：</p>
 <pre><code>&lt;%=表达式 %&gt;   //注意：表达式不以分号结束
-</code></pre><h5 id="JSP页面生命周期"><a href="#JSP页面生命周期" class="headerlink" title="JSP页面生命周期"></a>JSP页面生命周期</h5>
+</code></pre><h5 id="JSP页面生命周期"><a href="#JSP页面生命周期" class="headerlink" title="JSP页面生命周期"></a>JSP页面生命周期</h5><p>要理解jsp的底层功能，知道其生命周期是必要的</p>
+<p>生命周期过程：</p>
+<ul>
+<li>用户发出请求index.jsp</li>
+<li>判断是否是第一次请求<ul>
+<li>是：JSP引擎把该JSP文件转换成为一个Servlet，生成字节码文件，并执行jspInit()</li>
+</ul>
+</li>
+</ul>
+
       
     </div>
     
