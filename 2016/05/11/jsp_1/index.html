@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="java web," />
 
 
 
@@ -90,15 +90,16 @@
 
 
 
-<meta name="description" content="感谢那些再也回不去的时光，让我学会成长。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Walker's Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="JSP内置对象是Web容器创建的一组对象，不使用new关键字就可以使用的内置对象。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JSP内置对象">
+<meta property="og:url" content="http://yoursite.com/2016/05/11/jsp_1/index.html">
 <meta property="og:site_name" content="Walker's Blog">
-<meta property="og:description" content="感谢那些再也回不去的时光，让我学会成长。">
+<meta property="og:description" content="JSP内置对象是Web容器创建的一组对象，不使用new关键字就可以使用的内置对象。">
+<meta property="og:updated_time" content="2016-11-05T07:14:21.315Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Walker's Blog">
-<meta name="twitter:description" content="感谢那些再也回不去的时光，让我学会成长。">
+<meta name="twitter:title" content="JSP内置对象">
+<meta name="twitter:description" content="JSP内置对象是Web容器创建的一组对象，不使用new关键字就可以使用的内置对象。">
 
 
 
@@ -119,10 +120,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/05/11/jsp_1/"/>
 
 
-  <title> Walker's Blog </title>
+  <title> JSP内置对象 | Walker's Blog </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -143,9 +144,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -242,9 +241,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -264,10 +263,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/05/11/jsp_1/" itemprop="url">
-                  JSP内置对象
-                </a>
+                JSP内置对象
               
             
           </h1>
@@ -307,330 +303,84 @@
       
 
       
-        
-          <p>JSP内置对象是Web容器创建的一组对象，不使用new关键字就可以使用的内置对象。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/11/jsp_1/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
+        <p>JSP内置对象是Web容器创建的一组对象，不使用new关键字就可以使用的内置对象。<br><a id="more"></a></p>
+<h3 id="JSP九大内置对象"><a href="#JSP九大内置对象" class="headerlink" title="JSP九大内置对象"></a>JSP九大内置对象</h3><p>out、request、response、session、application、Page、pageContext、exception、config</p>
+<h5 id="out-对象"><a href="#out-对象" class="headerlink" title="out 对象"></a>out 对象</h5><p>out对象是JspWriter类的实例，是向客户端输出内容常用的对象。</p>
+<ul>
+<li>常用方法<ol>
+<li>void println() 向客户端打印字符串</li>
+<li>void clear() 清除缓冲区的内容，如果在flush之后调用会抛出异常</li>
+<li>void clearBuffer() 清除缓冲区的内容，如果在flush之后调用不会抛出异常</li>
+<li>void flush() 将缓冲区内容输出到客户端</li>
+<li>int getBufferSize() 返回缓冲区以字节数的大小，如不设缓冲区则为0</li>
+<li>int getRemaining() 返回缓冲区还剩余多少可用</li>
+<li>boolean isAutoFlush() 返回当缓冲区满时，是自动清空还是抛出异常</li>
+<li>void close() 关闭输出流</li>
+</ol>
+</li>
+</ul>
+<h5 id="request-对象"><a href="#request-对象" class="headerlink" title="request 对象"></a>request 对象</h5><p>客户端的请求信息被封装在request对象中，通过它才能了解到客户的需求，然后做出响应。它是HttpServletRequest类的实例。request对象具有请求域，即完成客户端的请求之前，该对象一直有效。</p>
+<ul>
+<li>常用方法<ol>
+<li>String getParameter(String name) 返回name指定参数的参数值</li>
+<li>String[] getParameterValues(String name) 返回包含参数name的所有值的数组</li>
+</ol>
+</li>
+</ul>
+
       
     </div>
 
     <div>
       
+        
+
+      
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/04/24/jsp/" itemprop="url">
-                  JSP学习笔记(一)
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-24T21:43:52+08:00" content="2016-04-24">
-              2016-04-24
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-
-          
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/java-web/" rel="tag">#java web</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p>JSP是一种运行在服务端的语言。全称（Java Server Pages），是由Sun Microsystems公司倡导和许多公司参与共同创建的一种使软件开发者可以响应客户端请求，而动态生成HTML、XML或其他格式文档的Web网页的技术标准。JSP技术是以Java语言作为脚本语言的，JSP网页为整个服务器端的Java库单元提供了一个接口来服务于HTTP的应用程序。</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/04/24/jsp/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/24/jsp/" rel="next" title="JSP学习笔记(一)">
+                <i class="fa fa-chevron-left"></i> JSP学习笔记(一)
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+          <div class="post-nav-prev post-nav-item">
             
-            
-              
-                
-                <a class="post-title-link" href="/2016/04/12/gitlearning/" itemprop="url">
-                  Git学习笔记
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-12T14:00:55+08:00" content="2016-04-12">
-              2016-04-12
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p>Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/04/12/gitlearning/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/04/08/hexo_github_blog/" itemprop="url">
-                  Hexo+GitHub 搭建自己的博客
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-08T23:09:53+08:00" content="2016-04-08">
-              2016-04-08
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>作为一名CS专业的学生，感觉需要一个个人的博客来记录学习的过程和心得了，所以第一步是搭建自己的博客。Hexo是一款基于Node.js的静态博客框架，这篇教程是针对Windows用户的。</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/04/08/hexo_github_blog/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -638,6 +388,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -657,8 +411,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/java.png"
@@ -712,6 +475,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#JSP九大内置对象"><span class="nav-number">1.</span> <span class="nav-text">JSP九大内置对象</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#out-对象"><span class="nav-number">1.0.1.</span> <span class="nav-text">out 对象</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#request-对象"><span class="nav-number">1.0.2.</span> <span class="nav-text">request 对象</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -815,6 +589,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
 
   
 
